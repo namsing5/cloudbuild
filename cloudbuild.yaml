@@ -11,6 +11,7 @@ steps:
   - 'SOLACE_PASSWORD=ateRch84'
   - 'SOLACE_QUEUENAME=ISOM_ORDER_DETAILS/1-5'
   - 'LOG_LEVEL=INFO'
+  - 'PORT=8080'
   waitFor: ['-']  # The '-' indicates that this step begins immediately.
 #  timeout: 500s
 - name: 'gcr.io/cloud-builders/docker'
