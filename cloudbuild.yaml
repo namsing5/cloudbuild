@@ -31,7 +31,6 @@ steps:
   - '--service-account'
   - 'workflow-cloudruninvoker@ingka-fulfilment-ordermgt-dev.iam.gserviceaccount.com'
   - '--allow-unauthenticated'
-  - 'Y'
   waitFor: ['push-image-to-container-registry']
   id: 'deploy-to-cloud-run'
 #options:
