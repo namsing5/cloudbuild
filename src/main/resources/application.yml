@@ -1,0 +1,26 @@
+spring:
+   main:
+    allow-bean-definition-overriding: true
+    banner-mode: off
+   application:
+      name: eventmeshtopubsubproducer
+   cloud:
+    gcp:
+      project-id: ${GCP_PROJECTID}
+      topic-id: ${GCP_TOPICID}
+      #credentials:
+       # location: file:C:\Springboot\ingka-fulfilment-ordermgt-dev-48fa3abba22c.json
+    
+solace:
+  jms:
+    host: ${SOLACE_HOST}
+    msg-vpn: ${SOLACE_VPN}
+    client-username: ${SOLACE_USER}
+    client-password: ${SOLACE_PASSWORD}
+
+sol:
+  InQueues:  ${SOLACE_QUEUENAME}
+      
+logging:
+  level:
+    root: ${LOG_LEVEL}
