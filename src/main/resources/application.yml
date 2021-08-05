@@ -22,7 +22,8 @@ sol:
   InQueues:  ${SOLACE_QUEUENAME}
  
 server:
-  port: 8080
+  host: 0.0.0.0
+  port: ${PORT}
       
 logging:
   level:
