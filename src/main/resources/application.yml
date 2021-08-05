@@ -20,6 +20,9 @@ solace:
 
 sol:
   InQueues:  ${SOLACE_QUEUENAME}
+ 
+server:
+  port: ${CONTAINER_PORT}
       
 logging:
   level:
