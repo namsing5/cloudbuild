@@ -22,7 +22,7 @@ sol:
   InQueues:  ${SOLACE_QUEUENAME}
  
 server:
-  port: ${CONTAINER_PORT}
+  port: ${PORT}
       
 logging:
   level:
