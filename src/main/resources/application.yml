@@ -13,10 +13,10 @@ spring:
     
 solace:
   jms:
-    host: tcps://mr-q0vkfx9edol.messaging.solace.cloud:20008
-    msg-vpn: sweden-dc7-ocp3-dev-01
-    client-username: s-isomapp-u-ptpseelm
-    client-password: ateRch84
+    host: tcps://int-gke-euwe4-ingka.messaging.solace.cloud:55443
+    msg-vpn: int-gke-euwe4
+    client-username: isom-sa
+    client-password: aXNvbS1zYQ==
 
 sol:
   InQueues:  ISOM_ORDER_DETAILS/1-5
