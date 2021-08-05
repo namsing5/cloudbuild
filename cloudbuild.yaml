@@ -24,6 +24,7 @@ steps:
   - '--allow-unauthenticated'
   waitFor: ['push-image-to-container-registry']
   id: 'deploy-to-cloud-run'
+  timeout: 660s
 #options:
 #   machineType: 'N1_HIGHCPU_8'
 #timeout: 660s
