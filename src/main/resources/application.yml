@@ -7,9 +7,9 @@ spring:
    cloud:
     gcp:
       project-id: ingka-fulfilment-ordermgt-dev
-	   topic-id: ingka-ofd-order-execution-event-topic
-      #credentials:
-       # location: file:C:\Springboot\ingka-fulfilment-ordermgt-dev-48fa3abba22c.json
+      topic-id: ingka-ofd-order-execution-event-topic
+      credentials:
+        location: file:C:\Springboot\ingka-fulfilment-ordermgt-dev-48fa3abba22c.json
     
 solace:
   jms:
