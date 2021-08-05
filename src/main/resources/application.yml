@@ -20,9 +20,6 @@ solace:
 
 sol:
   InQueues:  ISOM_ORDER_DETAILS/1-5
-
-server:
-  port: 8080
       
 logging:
   level:
