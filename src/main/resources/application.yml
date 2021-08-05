@@ -6,25 +6,24 @@ spring:
       name: eventmeshtopubsubproducer
    cloud:
     gcp:
-      project-id: ${GCP_PROJECTID}
-      topic-id: ${GCP_TOPICID}
+      project-id: ingka-fulfilment-ordermgt-dev
+	   topic-id: ingka-ofd-order-execution-event-topic
       #credentials:
        # location: file:C:\Springboot\ingka-fulfilment-ordermgt-dev-48fa3abba22c.json
     
 solace:
   jms:
-    host: ${SOLACE_HOST}
-    msg-vpn: ${SOLACE_VPN}
-    client-username: ${SOLACE_USER}
-    client-password: ${SOLACE_PASSWORD}
+    host: tcps://mr-q0vkfx9edol.messaging.solace.cloud:20008
+    msg-vpn: sweden-dc7-ocp3-dev-01
+    client-username: s-isomapp-u-ptpseelm
+    client-password: ateRch84
 
 sol:
-  InQueues:  ${SOLACE_QUEUENAME}
- 
+  InQueues:  ISOM_ORDER_DETAILS/1-5
+
 server:
-  host: 0.0.0.0
-  port: ${PORT}
+  port: 8080
       
 logging:
   level:
-    root: ${LOG_LEVEL}
+    root: INFO
