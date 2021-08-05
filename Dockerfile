@@ -24,4 +24,4 @@ FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
 COPY --from=builder /app/target/eventmeshtopubsubproducer-*.jar /eventmeshtopubsubproducer.jar
 
 # Run the web service on container startup.
-CMD ["java","-Djava.security.egd=file:/dev/./urandom","-Dserver.port=${CONTAINER_PORT}","-jar","/eventmeshtopubsubproducer.jar"]
+CMD ["java","-Djava.security.egd=file:/dev/./urandom","-Dserver.port=${PORT}","-jar","/eventmeshtopubsubproducer.jar"]
